@@ -1,8 +1,15 @@
 "use strict";
 exports.__esModule = true;
 var message = "Hello World";
-var name = "Anant";
+// let name = "Anant";
 console.log(message);
-console.log(name);
-
-const value = 8;
+// console.log(name);
+var isBeginner = true;
+var total = 5;
+var name = "Anant";
+var statement = "My name is ".concat(name, ".\nI am a beginner in Typescript.");
+console.log(statement);
+name = undefined;
+name = null;
+statement = undefined;
+statement = null;
