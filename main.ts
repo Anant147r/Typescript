@@ -53,3 +53,29 @@ let newValue2 = 4;
 let multitype: number | boolean;
 multitype = true;
 multitype = 6;
+
+// FUNCTION
+
+function add(num1: number, num2: number) {
+  return num1 + num2;
+}
+
+// add() Gives error
+add(1, 2);
+// add(2,"sdf") Gives error
+
+// return type of a function
+function add2(num1: number, num2: number): number {
+  return num1 + num2;
+}
+
+// optional parameter
+function add3(num1: number, num2?: number): number {
+  if (num1) return num1 + num2;
+  return num2;
+}
+
+// default parameter
+function add4(num1: number, num2: number = 10): number {
+  return num1 + num2;
+}

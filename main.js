@@ -42,3 +42,25 @@ var newValue2 = 4;
 var multitype;
 multitype = true;
 multitype = 6;
+// FUNCTION
+function add(num1, num2) {
+    return num1 + num2;
+}
+// add() Gives error
+add(1, 2);
+// add(2,"sdf") Gives error
+// return type of a function
+function add2(num1, num2) {
+    return num1 + num2;
+}
+// optional parameter
+function add3(num1, num2) {
+    if (num1)
+        return num1 + num2;
+    return num2;
+}
+// default parameter
+function add4(num1, num2) {
+    if (num2 === void 0) { num2 = 10; }
+    return num1 + num2;
+}
