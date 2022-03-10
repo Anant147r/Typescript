@@ -79,3 +79,19 @@ function add3(num1: number, num2?: number): number {
 function add4(num1: number, num2: number = 10): number {
   return num1 + num2;
 }
+
+// INTERFACE
+interface Person {
+  firstName: string;
+  lastName: string;
+}
+
+function fullName(person: Person) {
+  console.log(`${person.firstName} ${person.lastName}`);
+}
+
+let p = {
+  firstName: "Anant",
+  lastName: "Rawat",
+};
+fullName(p);

@@ -64,3 +64,11 @@ function add4(num1, num2) {
     if (num2 === void 0) { num2 = 10; }
     return num1 + num2;
 }
+function fullName(person) {
+    console.log("".concat(person.firstName, " ").concat(person.lastName));
+}
+var p = {
+    firstName: "Anant",
+    lastName: "Rawat"
+};
+fullName(p);
