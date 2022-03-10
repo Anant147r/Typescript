@@ -95,3 +95,33 @@ let p = {
   lastName: "Rawat",
 };
 fullName(p);
+
+// CLASS
+class Employee {
+  employeeName: string;
+  constructor(name: string) {
+    this.employeeName = name;
+  }
+  greet() {
+    console.log(`Hello ${this.employeeName}`);
+  }
+}
+
+let emp = new Employee("Anant");
+emp.greet();
+
+class Manager extends Employee {
+  managerName: string;
+  constructor(name: string) {
+    super(name);
+    this.managerName = name;
+  }
+
+  managerTask() {
+    console.log("Task done by manager");
+  }
+}
+
+let manager = new Manager("Rawat");
+manager.managerTask();
+manager.greet();
